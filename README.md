@@ -14,6 +14,7 @@ It was developed as part of my MSc research work.
 ---
 
 ## 📂 Project Structure
+'''
 piv-scalar-interface-segmentation/
 ├── src/
 │ ├── data.py # Load + preprocess data, create .npy datasets
@@ -23,7 +24,6 @@ piv-scalar-interface-segmentation/
 │ ├── image_size.py # Resize PIV images
 │ ├── mask_size.py # Resize and binarize masks
 │
-├── figures/ # Example results (to be added)
 ├── dataset/ # Optional dataset folder
 └── README.md
-
+'''
