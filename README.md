@@ -24,6 +24,5 @@ piv-scalar-interface-segmentation/
 │   ├── image_size.py        # Resize PIV images
 │   ├── mask_size.py         # Resize and binarize masks
 │
-├── figures/                 # Example results (optional)
 ├── dataset/                 # Optional dataset folder
 └── README.md
