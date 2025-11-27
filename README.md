@@ -14,11 +14,16 @@ It was developed as part of my MSc research work.
 ---
 
 ## 📂 Project Structure
-src/
-├── data.py # Load + preprocess data, create .npy datasets
-├── case.py # U-Net model, training and testing
-scripts/
-├── image_size.py # Resize PIV images
-├── mask_size.py # Resize and binarize masks
-
+piv-scalar-interface-segmentation/
+├── src/
+│ ├── data.py # Load + preprocess data, create .npy datasets
+│ ├── case.py # U-Net model, training and testing scripts
+│
+├── scripts/
+│ ├── image_size.py # Resize PIV images
+│ ├── mask_size.py # Resize and binarize masks
+│
+├── figures/ # Example results (to be added)
+├── dataset/ # Optional dataset folder
+└── README.md
 
