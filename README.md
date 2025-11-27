@@ -15,10 +15,10 @@ It was developed as part of my MSc research work.
 
 ## 📂 Project Structure
 src/
-  ├── data.py # Load + preprocess data, create .npy datasets
-  ├── case.py # U-Net model, training and testing
+├── data.py # Load + preprocess data, create .npy datasets
+├── case.py # U-Net model, training and testing
 scripts/
-  ├── image_size.py # Resize PIV images
-  ├── mask_size.py # Resize and binarize masks
+├── image_size.py # Resize PIV images
+├── mask_size.py # Resize and binarize masks
 
 
