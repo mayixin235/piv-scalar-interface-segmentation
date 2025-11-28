@@ -56,7 +56,17 @@ piv-scalar-segmentation/
 │
 └── README.md
 ```
+## How to Run
 
+1. Generate synthetic images and masks in MATLAB using `matlab/` scripts.
+2. Resize images and masks using `resize/image_size.py` and `resize/mask_size.py`.
+3. Create NumPy datasets:
+   cd data_prep
+   python data.py
+Train the U-Net model:
+   cd unet
+   python case.py
+Check predictions in sample_outputs/ or the folder configured in case.py.
 ## Example Results
 <img width="840" height="630" alt="11" src="https://github.com/user-attachments/assets/69c0702d-ba88-42da-b865-67d60a4bd6f2" />
 
