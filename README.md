@@ -24,7 +24,7 @@ This repository contains a full pipeline for generating, preprocessing, and segm
    - Save segmentation results
 
 ## Repository Structure
-mask'''
+'''
 piv-scalar-segmentation/
 │
 ├── matlab/
