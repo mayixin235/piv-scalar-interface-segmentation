@@ -43,7 +43,7 @@ piv-scalar-segmentation/
 │
 ├── unet/
 │     ├── case.py
-│     ├── weights/ (empty or .gitignore)
+│     ├── weights/ (didnt upload)
 │     └── README_unet.md
 │
 ├── sample_outputs/
