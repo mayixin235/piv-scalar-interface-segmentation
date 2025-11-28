@@ -24,7 +24,7 @@ This repository contains a full pipeline for generating, preprocessing, and segm
    - Save segmentation results
 
 ## Repository Structure
-'''text
+```text
 piv-scalar-segmentation/
 │
 ├── matlab/
@@ -55,7 +55,7 @@ piv-scalar-segmentation/
 │     └── pipeline_diagram.png (optional)
 │
 └── README.md
-'''
+```
 
 ## Example Results
 <img width="840" height="630" alt="11" src="https://github.com/user-attachments/assets/69c0702d-ba88-42da-b865-67d60a4bd6f2" />
