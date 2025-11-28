@@ -1,4 +1,4 @@
-# Dataset Preparation (NumPy Conversion)
+# Dataset Preparation 
 
 This directory contains the script responsible for converting image folders into NumPy arrays for efficient training.
 
