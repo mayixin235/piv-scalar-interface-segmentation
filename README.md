@@ -1,28 +1,66 @@
-# PIV Scalar Interface Segmentation (U-Net)
+# PIV Scalar Interface Segmentation using U-Net
 
-This project performs scalar interface segmentation on synthetic PIV (Particle Image Velocimetry) images using a U-Net model.  
-It was developed as part of my MSc research work.
+This repository contains a full pipeline for generating, preprocessing, and segmenting synthetic PIV (Particle Image Velocimetry) particle images using a U-Net model. The project is based on MATLAB image generation, Python data processing, and deep learning training.
 
----
+## Pipeline Overview
 
-## 🔍 Overview
-- Synthetic PIV images + ground-truth interface masks  
-- Preprocessing scripts for resizing images and masks  
-- U-Net segmentation implemented with Keras  
-- Training / testing pipeline with result saving
+1. **MATLAB Synthetic Image Generation**
+   - Generate multi-layer turbulence structures
+   - Adjustable density ratio and wavelength limits
+   - Outputs raw images and binary masks
 
----
+2. **Python Image Resizing**
+   - Resize all images to consistent dimensions
+   - Maintains mask–image alignment
 
-## 📂 Project Structure
-```text
-piv-scalar-interface-segmentation/
-├── src/
-│   ├── data.py              # Load + preprocess data, create .npy datasets
-│   ├── case.py              # U-Net model, training and testing scripts
+3. **Data Preparation**
+   - Convert image folders into NumPy arrays
+   - Normalization and mask binarization
+   - Generates all `.npy` datasets
+
+4. **U-Net Training**
+   - Build U-Net architecture
+   - Train, test, and visualize predictions
+   - Save segmentation results
+
+## Repository Structure
+piv-scalar-segmentation/
 │
-├── scripts/
-│   ├── image_size.py        # Resize PIV images
-│   ├── mask_size.py         # Resize and binarize masks
+├── matlab/
+│     ├── Layer_Generator.m
+│     ├── mat_new.m
+│     └── README_matlab.md
 │
-├── dataset/                 # Optional dataset folder
+├── resize/
+│     ├── image_size.py
+│     ├── mask_size.py
+│     └── README_resize.md
+│
+├── data_prep/
+│     ├── data.py
+│     └── README_data.md
+│
+├── unet/
+│     ├── case.py
+│     ├── weights/ (empty or .gitignore)
+│     └── README_unet.md
+│
+├── sample_outputs/
+│     ├── synthetic_image.png
+│     ├── synthetic_mask.png
+│     ├── unet_prediction.png
+│
+├── figures/
+│     └── pipeline_diagram.png (optional)
+│
 └── README.md
+
+
+## Example Results
+<img width="840" height="630" alt="11" src="https://github.com/user-attachments/assets/69c0702d-ba88-42da-b865-67d60a4bd6f2" />
+
+## Requirements
+Python 3.x, NumPy, TensorFlow/Keras, OpenCV, MATLAB
+
+## About
+Project developed for research on turbulence–scalar interface detection.
