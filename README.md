@@ -52,7 +52,7 @@ piv-scalar-segmentation/
 │     ├── unet_prediction.png
 │
 ├── figures/
-│     └── pipeline_diagram.png (optional)
+│     └── pipeline_diagram.png
 │
 └── README.md
 ```
